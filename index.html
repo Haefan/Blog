@@ -1,0 +1,156 @@
+<!doctype html>
+<html>
+<head></head>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<title>Home</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	
+	
+</head>
+<body>
+<!-- 头部 -->
+<div class="Header">
+	<!-- 导航条 -->
+	<div class="topBar">
+		<div class="blogTitle">
+			<h3>Haefan's Blog</h3>
+		</div>
+		<ul class="topList">
+			<li><a href="index.html">首页</a></li>
+			<li><a href="about.html">关于我</a></li>
+			<li><a href="experience.html">成长经历</a></li>
+			<li><a href="share.html">美文分享</a></li>
+			<li><a href="log.html">我的日志</a></li>
+			<li><a href="#">留言板</a></li>
+		</ul>
+	</div>
+</div>
+<!-- body部分 -->
+<div class="Body">
+	<!-- banner部分 -->
+	<div class="left_arrow" id="left_arrow"><a>&lt;</a></div>
+	<div class="right_arrow" id="right_arrow"><a>&gt;</a></div>
+	<div class="banner">
+		<ul class="bannerUl" id="bannerUl">
+			<li><img src="images/1.jpg"></li>
+			<li><img src="images/2.jpg"></li>
+			<li><img src="images/3.jpg"></li>
+		</ul>
+		<div class="dot" id="dot">
+			<a class="active"></a>
+			<a></a>
+			<a></a>
+		</div>
+	</div>
+
+	<!-- article部分 -->
+	<div class="article">
+		<div class="container">
+			<a class="articleCont" href="#">
+				<h3>具身认知：身体不是大脑的外衣，而是大脑的肉体本身</h3>
+				<div class="articleDiscr">
+					心智大道，求索者众。衣带渐宽，人消憔悴，那时是殚尽力竭；
+					筚路蓝缕，以启山林，那是身体力行；行至水穷，坐看...
+				</div>
+			</a>
+			<p class="postTime">发表于：2016-8-25</p>
+		</div>
+		<div class="container">
+			<a class="articleCont" href="#">
+				<h3>具身认知：身体不是大脑的外衣，而是大脑的肉体本身</h3>
+				<div class="articleDiscr">
+					心智大道，求索者众。衣带渐宽，人消憔悴，那时是殚尽力竭；
+					筚路蓝缕，以启山林，那是身体力行；行至水穷，坐看...
+				</div>
+			</a>
+			<p class="postTime">发表于：2016-8-25</p>
+		</div>
+		<div class="container">
+			<a class="articleCont" href="#">
+				<h3>具身认知：身体不是大脑的外衣，而是大脑的肉体本身</h3>
+				<div class="articleDiscr">
+					心智大道，求索者众。衣带渐宽，人消憔悴，那时是殚尽力竭；
+					筚路蓝缕，以启山林，那是身体力行；行至水穷，坐看...
+				</div>
+			</a>
+			<p class="postTime">发表于：2016-8-25</p>
+		</div>
+		<div class="container">
+			<a class="articleCont" href="#">
+				<h3>具身认知：身体不是大脑的外衣，而是大脑的肉体本身</h3>
+				<div class="articleDiscr">
+					心智大道，求索者众。衣带渐宽，人消憔悴，那时是殚尽力竭；
+					筚路蓝缕，以启山林，那是身体力行；行至水穷，坐看...
+				</div>
+			</a>
+			<p class="postTime">发表于：2016-8-25</p>
+		</div>
+	</div>
+</div>
+<!-- footer部分 -->
+<div class="footer">
+	<div class="footerContainer">
+		<span class="copyRight">
+			Copyright@2016 All Right Reserved.
+		</span>
+.
+		<p class="authorMessage">
+			By Haefan/石海风.
+		</p>
+	</div>
+</div>
+<!-- 回到顶部箭头 -->
+<div class="backTop" id="backTop" title="回到顶部">
+	<a></a>
+</div>
+<!-- javascript部分 -->
+<script type="text/javascript">
+	window.onload=function(){
+		var left_arrow=document.getElementById("left_arrow");
+		var right_arrow=document.getElementById("right_arrow");
+		var bannerUl=document.getElementById("bannerUl");
+		var oLi=bannerUl.getElementsByTagName('li');
+		var dot=document.getElementById("dot");
+		var oA=dot.getElementsByTagName('a');
+		var now=0;
+		var count=0;
+		var timer=null;
+		function done(){
+			if(count==0){
+				clearTimeout(timer);
+			}else{
+				count--;
+				now++;
+				var top=getStyle(bannerUl,"top");
+				newTop=parseInt(top);	
+				if(now==oA.length){
+					now=0;
+				}
+				for(var i=0;i<oA.length;i++){
+					oA[i].className="";
+				}
+				oA[now].className="active";
+				startMove(bannerUl,{top:(newTop-362)});
+			
+				if(newTop==-724){
+					startMove(bannerUl,{top:0});
+				}
+			}
+			
+		}
+		right_arrow.onclick=left_arrow.onclick=function(){
+			if(count==0){
+				count=1;
+				timer=setTimeout(done,1000);
+			}
+		};
+
+	
+		
+	};
+	</script>
+	<script type="text/javascript" src="js/move.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+</body>
+</html>

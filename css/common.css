@@ -1,0 +1,14 @@
+/*照片墙*/
+.picWall{width:100%;height:280px;background-color:#3cb371;color:#fff;font-family: "MicrosoftYaHei","微软雅黑";text-align: center;
+margin-top:80px;padding:10px 0;position:relative;}
+.picWall .aboutMe{width:220px;height:80px;font-size: 30px;font-weight: bold;line-height: 80px;position:absolute;top:20%;left:42%;}
+.picWall .discribe{font-size: 16px;line-height: 80px;position:absolute;top:50%;left:45%;}
+
+
+/*body*/
+.body{width:1000px;margin: 0 auto 0;}
+/*个人介绍部分*/
+.personMes{padding-left: 50px;}
+.personMes h2{font-size:30px;margin:5px 0;}
+.personMes li{font-size:20px;width:400px;height:30px;line-height: 30px;display:block;}
+

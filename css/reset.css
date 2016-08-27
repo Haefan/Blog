@@ -1,0 +1,36 @@
+*{
+	margin:0;padding:0;
+
+}
+body{
+	font-size:12px;
+}
+img{
+	border:none;
+}
+li{
+	list-style:none;
+}
+input,select,textarea{
+	outline:none;border:none;
+	background:;
+}
+textarea{
+	resize:none;
+}
+a{
+	text-decoration:none;color:#656565;
+	color:#656565;
+}
+a:hover{text-decoration: underline;}
+
+/*清除浮动*/
+.clearfix:after{content:'';display:block;clear:both;}
+.clearfix{zoom:1;}
+/*设置左右浮动*/
+.fl{
+	float:left;
+}
+.fr{
+	float:right;
+}
