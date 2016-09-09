@@ -8,6 +8,7 @@ margin-top:80px;padding:10px 0;position:relative;}
 /*body*/
 .body{width:1000px;margin: 0 auto 0;}
 /*个人介绍部分*/
+.container{width:auto;}
 .personMes{padding-left: 50px;}
 .personMes h2{font-size:30px;margin:5px 0;}
 .personMes li{font-size:20px;width:400px;height:30px;line-height: 30px;display:block;}
