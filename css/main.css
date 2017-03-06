@@ -18,7 +18,7 @@
 .bannerUl li{/*float:left;*/}
 .bannerUl li img{display:block;}
 .left_arrow{font-weight: bold;font-size: 100px;position:absolute;left:200px;top:180px;z-index: 3000;}
-.right_arrow{font-weight: bold;font-size: 100px;position:absolute;left:1105px;top:180px;z-index: 3000;}
+.right_arrow{font-weight: bold;font-size: 100px;position:absolute;left:1050px;top:180px;z-index: 3000;}
 .left_arrow a,
 .right_arrow a{text-decoration: none;color:#fff;filter:opacity(alpha:30);opacity: 0.3;cursor: pointer;}
 .left_arrow a:hover,
